@@ -1,39 +1,196 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# ❄️ Frostedify
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+**Frostedify** brings the stunning **Liquid Glass UI (Glassmorphism)** to your Flutter apps. Add beautiful blur, gradients, shimmer effects, and glass-style components — all in one easy-to-use package.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+> ✨ Inspired by Apple’s glass UI on iOS
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+![Frostedify Demo](https://yourhost.com/frostedify_demo.gif) <!-- Replace this with your own GIF or video thumbnail -->
 
-## Features
+---
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## 🎯 Why Frostedify?
 
-## Getting started
+- ✅ Clean, reusable `Frostedify Glass Container`
+- ✅ `Frostedify Glass Button`, `Frostedify Glass Card`, `Frostedify Glass Dialog`,`Frostedify Navigation`,  and `Frostedify Glass AppBar`
+- ✅ Optional `Frostedify ShimmerEffect` (animated light glint)
+- ✅ Platform-aware rendering (Android, iOS, Web, Desktop)
+- ✅ Easy to use, beautifully customizable
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+---
 
-## Usage
+## 📦 Installation
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Add to your `pubspec.yaml`:
 
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  frostedify: ^1.0.0
 ```
 
-## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Then run:
+
+```bash
+flutter pub get
+```
+
+---
+
+## 🚀 Getting Started
+
+Import the package:
+
+```dart
+import 'package:frostedify/frostedify.dart';
+```
+
+---
+
+## 💡 Components & Usage
+
+### 🧊 GlassContainer
+
+```dart
+GlassContainer(
+  height: 100,
+  width: 300,
+  child: Text("Glass UI", style: TextStyle(color: Colors.white)),
+)
+```
+
+---
+
+### 🔘 GlassButton
+
+```dart
+GlassButton(
+  label: "Click Me",
+  icon: Icons.touch_app,
+  onPressed: () {},
+)
+```
+
+---
+
+### 🃏 GlassCard
+
+```dart
+GlassCard(
+  child: Column(
+    children: [
+      Icon(Icons.ac_unit),
+      Text("Cool Card"),
+    ],
+  ),
+)
+```
+
+---
+
+### 🔲 GlassAppBar
+
+```dart
+GlassAppBar(title: 'Frostedify')
+```
+
+---
+
+### 🧊 GlassDialog
+
+```dart
+GlassDialog(
+  title: "Hello!",
+  content: "This is a glass dialog",
+  onConfirm: () => Navigator.pop(context),
+)
+```
+
+---
+
+### ✨ ShimmerEffect
+
+```dart
+Stack(
+  alignment: Alignment.center,
+  children: [
+    GlassContainer(child: Text("Shimmering")),
+    const LiquidShimmer(),
+  ],
+)
+```
+
+---
+
+## 🧪 Run Example
+
+```bash
+cd example
+flutter run
+```
+
+> 🎥 Demo Video: [Watch Here](https://yourvideolink.com/frostedify_demo.mp4)
+
+---
+
+## 🛠️ Customize
+
+| Prop           | Description                        | Default                  |
+|----------------|------------------------------------|--------------------------|
+| `blur`         | Blur intensity (sigma)             | `15`                     |
+| `borderRadius` | Border curve                       | `Radius.circular(20)`    |
+| `gradient`     | Optional background gradient       | `null`                   |
+| `color`        | Background color overlay           | `white.withOpacity(.2)`  |
+
+---
+
+## 🧭 Folder Structure
+
+```
+frostedify/
+├── lib/
+│   ├── frostedify.dart
+│   └── src/
+│       ├── glass_container.dart
+│       ├── glass_button.dart
+│       ├── glass_card.dart
+│       ├── glass_dialog.dart
+│       ├── glass_appbar.dart
+│       ├── shimmer_effect.dart
+│       └── utils/platform_utils.dart
+├── example/
+│   └── main.dart
+```
+
+---
+
+## 🌐 Platform Support
+
+✅ iOS  
+✅ Android  
+✅ Web  
+✅ Desktop (macOS, Windows, Linux)
+
+---
+
+## 💬 Contributing
+
+Have ideas, feedback, or features to add?  
+We welcome pull requests and issues from the community!
+
+---
+
+## 📜 License
+
+MIT License © 2025 Muhammad Omar
+
+---
+
+## 👨‍💻 Author
+
+Developed with ❤️ by [@MuhammadOmar29](https://github.com/umarKhan1/)
+
+---
+
+## 🙌 Support
+
+If you like this package, please ⭐ it on GitHub and share it with the Flutter community!
