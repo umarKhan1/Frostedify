@@ -187,7 +187,7 @@ MIT License © 2025 Muhammad Omar
 
 ## 👨‍💻 Author
 
-Developed with ❤️ by [@MuhammadOmar29](https://github.com/MuhammadOmar29)
+Developed with ❤️ by [@MuhammadOmar29](https://github.com/umarKhan1/)
 
 ---
 
