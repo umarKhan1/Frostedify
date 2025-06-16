@@ -4,7 +4,7 @@
 
 > ✨ Inspired by Apple’s glass UI on iOS
 
-[me](https://www.youtube.com/watch?v=sdFk06k5c7s)
+![Image](https://github.com/user-attachments/assets/e880ce30-d0ad-4f0b-b3f2-7d071c9485ad)
 ---
 
 ## 🎯 Why Frostedify?
