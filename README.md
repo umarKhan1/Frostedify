@@ -48,10 +48,10 @@ import 'package:frostedify/frostedify.dart';
 
 ## 💡 Components & Usage
 
-### 🧊 GlassContainer
+### 🧊 FrostedifyGlassContainer
 
 ```dart
-GlassContainer(
+FrostedifyGlassContainer(
   height: 100,
   width: 300,
   child: Text("Glass UI", style: TextStyle(color: Colors.white)),
@@ -60,10 +60,10 @@ GlassContainer(
 
 ---
 
-### 🔘 GlassButton
+### 🔘 FrostedifyGlassButton
 
 ```dart
-GlassButton(
+FrostedifyGlassButton(
   label: "Click Me",
   icon: Icons.touch_app,
   onPressed: () {},
@@ -72,10 +72,10 @@ GlassButton(
 
 ---
 
-### 🃏 GlassCard
+### 🃏 FrostedifyGlassCard
 
 ```dart
-GlassCard(
+FrostedifyGlassCard(
   child: Column(
     children: [
       Icon(Icons.ac_unit),
@@ -87,18 +87,18 @@ GlassCard(
 
 ---
 
-### 🔲 GlassAppBar
+### 🔲 FrostedifyGlassAppBar
 
 ```dart
-GlassAppBar(title: 'Frostedify')
+FrostedifyGlassAppBar(title: 'Frostedify')
 ```
 
 ---
 
-### 🧊 GlassDialog
+### 🧊 FrostedifyGlassDialog
 
 ```dart
-GlassDialog(
+FrostedifyGlassDialog(
   title: "Hello!",
   content: "This is a glass dialog",
   onConfirm: () => Navigator.pop(context),
@@ -113,10 +113,30 @@ GlassDialog(
 Stack(
   alignment: Alignment.center,
   children: [
-    GlassContainer(child: Text("Shimmering")),
+    FrostedifyGlassContainer(child: Text("Shimmering")),
     const LiquidShimmer(),
   ],
 )
+```
+
+---
+
+
+
+### ✨ FrostedifyNaviagationBar
+
+```dart
+  FrostedifyNaviagationBar(
+  currentIndex: index,
+  onTap: (i) => setState(() => index = i),
+  items: [
+    FrostedifyNaviagationBootomNavigationClass(icon: Icons.home, label: 'Home'),
+    FrostedifyNaviagationBootomNavigationClass(icon: Icons.favorite, label: 'Likes'),
+    FrostedifyNaviagationBootomNavigationClass(icon: Icons.person, label: 'Profile'),
+      FrostedifyNaviagationBootomNavigationClass(icon: Icons.settings, label: 'Setting'),
+
+  ],
+),
 ```
 
 ---
@@ -128,9 +148,6 @@ cd example
 flutter run
 ```
 
-> 🎥 Demo Video: [Watch Here](https://yourvideolink.com/frostedify_demo.mp4)
-
----
 
 ## 🛠️ Customize
 
@@ -143,25 +160,6 @@ flutter run
 
 ---
 
-## 🧭 Folder Structure
-
-```
-frostedify/
-├── lib/
-│   ├── frostedify.dart
-│   └── src/
-│       ├── glass_container.dart
-│       ├── glass_button.dart
-│       ├── glass_card.dart
-│       ├── glass_dialog.dart
-│       ├── glass_appbar.dart
-│       ├── shimmer_effect.dart
-│       └── utils/platform_utils.dart
-├── example/
-│   └── main.dart
-```
-
----
 
 ## 🌐 Platform Support
 
