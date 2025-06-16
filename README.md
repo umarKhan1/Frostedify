@@ -4,8 +4,7 @@
 
 > ✨ Inspired by Apple’s glass UI on iOS
 
-![Frostedify Demo](https://yourhost.com/frostedify_demo.gif) <!-- Replace this with your own GIF or video thumbnail -->
-
+![Image](https://github.com/user-attachments/assets/2bec4994-c692-44c6-a5ee-f7dafba199cb)
 ---
 
 ## 🎯 Why Frostedify?
