@@ -1,7 +1,9 @@
 name: frostedify
-description: "A new Flutter package project."
-version: 0.0.1
-homepage:
+description: A beautiful Liquid Glass UI (Glassmorphism) library for Flutter.
+version: 1.0.0
+homepage: https://github.com/umarKhan1/Frostedify
+repository: https://github.com/umarKhan1/Frostedify
+issue_tracker: https://github.com/umarKhan1/Frostedify/issues
 
 environment:
   sdk: ^3.8.1
